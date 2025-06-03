@@ -1,0 +1,24 @@
+.navBox{
+    background-color: #754930;
+    color: white;
+    position: fixed;
+    width: 100%;
+    animation: none;
+    transition: none;
+    z-index: 100;
+}
+.navItems{
+    /* background-color: #804c2e; */
+    /* border-radius: 1rem; */
+    margin: 0 1.5rem;
+    transition: .5s;
+    align-self: center;
+    /* height: 100%; */
+}
+.navItems:hover{
+    background-color: #965a37;
+}
+img[src="src/photos/caffeeGif.gif"]{
+    width: 50px;
+    margin-right: 40px;
+}

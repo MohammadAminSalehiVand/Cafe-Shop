@@ -1,0 +1,77 @@
+.mainHomeBox{
+    height: 55rem;
+    background-image: url("../photos/HomeImage.jpg");
+    width: 100%;
+    /* animation: backgroundImage 1.5s ease-out ; */
+}
+.upperMainHomeBox{
+    background-color: black;
+}
+
+
+.mainHomeBox  h2{
+    animation: secondheader 3s ease-out ;
+}
+
+.mainHomeBox  h1{
+    color: white;
+    animation: mainheader 3s ease-out;
+    position: relative;
+}
+img[src="src/photos/homeGif.gif"]{
+    width: 150px;
+    position: relative;
+    animation: homecoffee 3s ease-out;
+}
+
+@keyframes homecoffee{
+    0%{
+        top: 100px;
+        opacity: 0;
+    }
+    66%{
+        top: 100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 100%;
+    }
+}
+@keyframes mainheader{
+    0%{
+        top: -100px;
+        opacity: 0;
+    }
+    66%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 100%;
+    }
+}
+@keyframes secondheader{
+    0%{
+        scale: 50%;
+        opacity: 0;
+    }
+    66%{
+        scale: 50%;
+        opacity: 0;
+    }
+    100%{
+        scale: 100%;
+        opacity: 100%;
+    }
+}
+@keyframes backgroundImage {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
