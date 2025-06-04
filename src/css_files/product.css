@@ -1,5 +1,37 @@
 .productBox{
     font-weight: bold;
     width: 400px;
-    /* height: 400px; */
+    margin: .5rem;
+    transition: .3s;
+    overflow: hidden;
 }
+.productBox > div{
+    z-index: 100;
+    position: relative;
+    background-color: white;
+}
+.productBox .productImage{
+    transform: scale(1);
+    z-index: -100;
+    transition: .3s;
+}
+.productBox img{
+    transition: .3s;
+}
+.productBox:hover img{
+    transform: scale(1.1);
+}
+.productBox:hover a{
+    color:white;
+}
+.productBox a{
+    width: 100%;
+    text-align: center;
+    background-color: #d2b48c;
+    color: #d2b48c;
+    cursor: pointer;
+    transition: .3s;
+}
+/* .productBox a:hover{
+
+} */

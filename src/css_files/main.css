@@ -2,3 +2,22 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.visible{
+    opacity: 1;
+    animation: showingOff 1.5s ease-out;
+}
+.navBox,.upperMainHomeBox{
+    opacity: 1;
+    animation: none;
+}
+@keyframes showingOff {
+    0%{
+        opacity: 0;
+        transform: scale(.6);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

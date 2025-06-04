@@ -38,7 +38,6 @@ const Products = () => {
         {productList.map((item,index) =>
             (<Product name={item.name} price={item.price} discription={item.discription} image={item.image} key={index} />
         ))}
-        {/* <Product name={productList[0].name} price={productList[0].price} discription={productList[0].discription} image={productList[0].image}/> */}
     </div> );
 }
  

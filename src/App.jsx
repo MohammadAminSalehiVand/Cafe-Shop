@@ -8,6 +8,15 @@ import ContactUs from "./ContactUs.jsx"
 import AboutUs from "./AboutUs.jsx"
 
 function App() {
+  window.addEventListener("scroll",(item)=>{
+    document.querySelectorAll(".fade-in").forEach(el => {
+    let rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      el.classList.add("visible");
+    }
+  });
+
+  })
   
   return (
     <>

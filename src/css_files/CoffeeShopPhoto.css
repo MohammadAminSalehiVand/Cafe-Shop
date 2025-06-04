@@ -1,0 +1,99 @@
+.CoffeeShopPhotoBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CoffeeShopPhotoBox > img{
+    position: absolute;
+    width: 150px;
+}
+.CoffeeShopPhotoBox > div{
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+.CoffeeShopPhotoBox > div > p{
+    background-color: #36415394;
+    border-radius: 1rem;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+}
+.CoffeeShopPhotoBox > div > p.option1{
+    left: -250px;
+    top: 350px;
+    transition: .5s;
+}
+.CoffeeShopPhotoBox > div > p.option2{
+    right: -250px;
+    top: 400px;
+    transition: .5s;
+    z-index: -1;
+}
+.CoffeeShopPhotoBox > div > p.option3{
+    left: -250px;
+    top: 600px;
+    transition: .5s;
+    z-index: -1;
+}
+.CoffeeShopPhotoBox > img[src="src/photos/CoffeeShop.jpg"]
+{
+    width: 100%;
+    z-index: -100;
+    position: relative;
+}
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon1.webp"]
+{
+    position: absolute;
+    left: 230px;
+    top: 300px;
+    rotate: 30deg;
+    animation: coffeeIconAnimation 5s ease-in-out infinite;
+}
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon1.webp"]:hover ~ div > p.option1{
+    left: 0;
+}
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon3.png"]{
+    position: absolute;
+    right: 230px;
+    top: 300px;
+    rotate: -30deg;
+    width: 250px;
+    animation: coffeeIconAnimation 6s ease-in-out infinite;
+    
+}
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon3.png"]:hover ~ div > p.option2{
+    right: 0;
+}
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon2.png"]{
+    position: absolute;
+    left: 230px;
+    bottom: 200px;
+    rotate: 30deg;
+    width: 300px;
+    animation: coffeeIconAnimation 4s ease-in-out infinite;
+}
+
+.CoffeeShopPhotoBox > img[src="src/photos/coffeIcon2.png"]:hover ~ div > p.option3{
+    left: 100px;
+}
+@keyframes coffeeIconAnimation {
+    0%,100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(-5px,5px);
+        
+    }
+    50%{
+        transform: translate(10px,0px);
+        
+    }
+    75%{
+        transform: translate(-5px,-3px);
+
+    }
+    
+}

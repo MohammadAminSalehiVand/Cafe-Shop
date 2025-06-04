@@ -15,7 +15,7 @@ const Product = ({name,price,discription,image}) => {
         return word;
     }
     return (
-    <div className="productBox">
+    <div className="productBox fade-in">
         <div className="productImage">
             <img className="w-full" src={"src/photos/" + image} alt={findingAltName()}/>
         </div>
@@ -23,6 +23,7 @@ const Product = ({name,price,discription,image}) => {
             <h3 className="uppercase">{name}</h3>
             <p className="text-gray-600">{discription}</p>
             <i>{price} $</i>
+            <a>BUY</a>
         </div>
 
     </div> );
