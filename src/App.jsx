@@ -6,6 +6,7 @@ import Home from "./Home.jsx"
 import ProductPage from "./ProductPage.jsx"
 import ContactUs from "./ContactUs.jsx"
 import AboutUs from "./AboutUs.jsx"
+import Footer from './Footer.jsx';
 
 function App() {
   window.addEventListener("scroll",(item)=>{
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
         <Navbar/>
-        <div>
+        <div className='pt-12'>
           <Routes>
             <Route path='/' Component={Home}/>
             <Route path='/Product' Component={ProductPage}/>
@@ -29,6 +30,7 @@ function App() {
             <Route path='/AboutUs' Component={AboutUs}/>
           </Routes>
         </div>
+        <Footer/>
         
     </>
   )

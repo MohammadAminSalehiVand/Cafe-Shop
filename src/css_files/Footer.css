@@ -1,0 +1,35 @@
+.footerBox{
+    background-color: #3e7d5e;
+    color: #fff1e0;
+    padding: 1rem .7rem;
+    font-weight: 700;
+}
+.footerBox h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footerBox .boxes{
+    width: 30%;
+}
+.footerBox .box4{
+    width: 100%;
+}
+.footerBox p, .footerBox ul{
+    opacity: .7;
+    transition: .3s;
+}
+.footerBox li{
+    color: #fff1e0;
+    transition: .3s;
+    cursor: pointer;
+    text-shadow: #fff 10px 10px 10rem 5rem;
+}
+.footerBox li:hover{
+    color: white;
+    opacity: 100%;
+    text-shadow:  0 0 .5rem #ffffffa2;
+}
+.my-tag{
+    margin-top: 1rem;
+}

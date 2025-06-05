@@ -1,4 +1,5 @@
 import React, { Component,useState } from 'react'
+import Products from "./Products"
 
 
 const ProductPage = () => {
@@ -6,7 +7,7 @@ const ProductPage = () => {
 
     return (  
     <>
-        Product
+        <Products/>
     </>);
 }
  

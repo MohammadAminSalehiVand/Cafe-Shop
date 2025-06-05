@@ -1,6 +1,5 @@
 import "./css_files/product.css"
 const Product = ({name,price,discription,image}) => {
-    console.log(name,price,discription);
     const findingAltName = ()=>{
         let word = ""
         for (const char of image){
@@ -11,7 +10,6 @@ const Product = ({name,price,discription,image}) => {
                 word += char 
             }
         }
-        console.log(word)
         return word;
     }
     return (

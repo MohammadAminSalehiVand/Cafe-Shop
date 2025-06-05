@@ -1,0 +1,26 @@
+.contactUsBox
+{
+    color:#8b5a2b;
+}
+.contactUsBox .boxes{
+    width: 75%;
+    border-color: #8b5a2b;
+}
+textarea{
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: .3rem;
+    padding: .5rem;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+.contactUsBox button{
+    width: 20%;
+    color: white;
+    background-color: #8b5a2b;
+    border-radius: .7rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
